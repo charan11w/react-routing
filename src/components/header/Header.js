@@ -1,26 +1,33 @@
 import { Link } from "react-router-dom";
 
 function Header() {
-  const logo='https://e1.pngegg.com/pngimages/681/624/png-clipart-naruto-logos-naruto-anime-logo-thumbnail.png'
+  const logo = 'https://e1.pngegg.com/pngimages/681/624/png-clipart-naruto-logos-naruto-anime-logo-thumbnail.png'
   return (
     <div className="app">
-      <ul >
+      <ul className="head-ul">
         <Link to='home' className="cat">
-          <li> Home</li>
+          <li className="head-li"> Home</li>
         </Link>
         <Link to="category" className="cat">
-          <li >Category</li>
+          <li className="head-li">Category</li>
         </Link>
         <Link to='activity' className="cat">
-          <li>Activity</li>
+          <li className="head-li">Activity</li>
         </Link>
         <Link to='buy' className="cat">
-          <li>Buy</li>
+          <li className="head-li">Buy</li>
         </Link>
         <Link to='sell' className="cat">
-          <li>Sell</li>
+          <li className="head-li">Sell</li>
         </Link>
       </ul>
+      <div className="cart">
+        <Link to='support' className="cat">
+          <button className="bt">
+            Support
+          </button>
+        </Link>
+      </div>
     </div>
   );
 }

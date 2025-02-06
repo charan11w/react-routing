@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Activity from './components/Activity/Activity';
 import Sell from './components/Sell/Sell';
 import Buy from './components/Buy/Buy';
+import Support from './components/Support/Support';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='activity' element={<Activity />} />
         <Route path='sell' element={<Sell />} />
         <Route path='buy' element={<Buy />}></Route>
+        <Route path='support' element={<Support />}></Route>
       </Routes>
     </BrowserRouter>
   );
